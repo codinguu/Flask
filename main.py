@@ -1,16 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask("SuperScrapper")
 
 
 @app.route("/")
 def home():
-    return "Hello! Welcome to mi casa!"
-
-
-@app.route("/<username>")
-def contact(username):
-    return f"Hello {username} how are you doing"
+    return render_template("home.html")
 
 
 app.run(host="0.0.0.0")
