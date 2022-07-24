@@ -1,4 +1,3 @@
-from unittest import expectedFailure
 from flask import Flask, render_template, request, redirect, send_file
 from exporter import save_to_file
 from scrapper import get_jobs
